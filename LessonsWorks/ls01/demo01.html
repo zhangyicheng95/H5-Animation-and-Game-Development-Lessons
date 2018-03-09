@@ -45,21 +45,12 @@
             context.beginPath();
             context.arc(100,400,50,Math.PI,Math.PI*3/2,anticlockwise = false);
             context.stroke();
-            // context.closePath();
 
             context.save();
             context.strokeStyle = 'green';
             context.beginPath();
             context.arc(100,400,50,Math.PI/2,0,anticlockwise = true);
             context.stroke();
-            // context.closePath();
-            
-
-            //注意：Canvas只能有一个“当前”路径，当调用save和restore方法时，不会将它存储为当前绘图状态的一部分
-            //详见context.save 和context.restore部分
-            //                context.save();
-            //                context.stroke();//虽然调用了context.save()，但不会将当前路径存储为状态的一部分，所以描边依然有效
-            //                context.restore();
         }
 
 
@@ -67,7 +58,6 @@
 </head>
 
 <body>
-    <!--<div style="position: absolute; top: 50px; left: 50px;">-->
     <div>
         <canvas id="canvas" width="500" height="500" style="border:solid #ccc 2px">
             Your browser does not support the HTML 5 Canvas.
