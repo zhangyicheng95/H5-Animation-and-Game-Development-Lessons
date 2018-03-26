@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片截取</title>
+</head>
+<body>
+    <div id="box">
+        <canvas id="canvasOne" width="200" height="200" style="border: solid 1px white ">
+            Your browser don`t support canvas
+        </canvas>
+        <canvas id="canvasTwo" width="200" height="200" style="border: solid 1px white ">
+            Your browser don`t support canvas
+        </canvas>
+    </div>
+</body>
+<script>
+   window.onload = function(){
+       canvasOne();
+       canvasTwo();
+    }
+    function canvasOne(){
+        var ctx = document.getElementById('canvasOne').getContext('2d');
+
+        
+    }
+</script>
+</html>
