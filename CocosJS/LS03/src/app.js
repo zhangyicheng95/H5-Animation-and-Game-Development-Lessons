@@ -1,4 +1,4 @@
-
+﻿
 var HelloWorldLayer = cc.Layer.extend({
     label:null,
     second:0,
@@ -17,7 +17,7 @@ var HelloWorldLayer = cc.Layer.extend({
         this.schedule(this.myTimer,1,cc.REPEAT_FOREVER,0);
 
 
-        var labelBMFont = new cc.LabelBMFont("中华人民共和国",res.LabelBitmap_fnt);
+        var labelBMFont = new cc.LabelBMFont("建国博物馆",res.LabelBitmap_fnt);
         labelBMFont.x = size.width/2;
         labelBMFont.y = size.height/2;
         this.addChild(labelBMFont);
