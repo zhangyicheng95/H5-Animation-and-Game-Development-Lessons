@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>绘制三角形</title>
+    </head>
+    <script src="js/drawTriangle.js"></script>
+    <body>
+        <div>
+            <canvas id="canvas" width="1000" height="1000" color='red'>
+                Your browser does not support the HTML 5 Canvas.
+            </canvas>
+        </div>
+    </body>
+    <script>
+        window.addEventListener('load', canvasApp, false);
+
+        function canvasApp() {
+            var theCanvas = document.getElementById('canvas');
+            var context = theCanvas.getContext('2d');
+            drawTriangle(context);
+
+        }
+        function drawTriangle(ctx){
+            ctx.triangle(100,100,100,200,300,200);
+        }
+    </script>
+</html>
